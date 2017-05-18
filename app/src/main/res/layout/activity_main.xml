@@ -3,11 +3,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.bawei.srtxm.MainActivity">
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
 
-    <TextView
-        android:gravity="center"
+    <FrameLayout
+        android:layout_weight="1"
+        android:id="@+id/frame_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello World!" />
+        android:layout_height="0dp">
+    </FrameLayout>
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/sy"
+            android:button="@null"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/sy_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/fl"
+            android:button="@null"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/fl_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/pt"
+            android:button="@null"
+            android:layout_weight="1"
+            android:drawableBottom="@mipmap/img_tab_groupbuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/gwc"
+            android:button="@null"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/sy_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/wd"
+            android:button="@null"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/fl_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
 </LinearLayout>
